@@ -1,38 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- local css  -->
+    <link rel="stylesheet" href="style.css" />
+
     <style>
-        /* selector{
+      /* selector{
             property:value;
         } */
 
-        /* selector types:
-        1.id
+      /* selector types:
+        1.id => unique
         2.class
-        3.groping
+        3.grouping
         4.element
         5.pseudo 
         6.attribute
         7.universal */
 
+      * {
+        font-family: cursive;
+      }
+
+      /* element selector  */
+      h1 {
+        color: brown;
+      }
+
+      /* id slector  */
+      #description {
+        background-color: lightblue;
+      }
+
+      /* class selector  */
+      .course {
+        font-size: 50px;
+      }
+
+      /* grouping selector  */
+
+      p,
+      span {
+        /* font-weight:bold; */
+        /* font-weight:bolder; */
+        font-weight: 800;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      /* table tr th{
+        border: 2px solid;
+      } */
+
+      /* table thead #heading{ */
+      /* table tr #heading {
+        border: 2px solid red;
+      } */
+
+      /* attribute selector  */
+      img[alt="image1"]{
+        width: 200px;
+      }
+      img[alt="image2"]{
+        width: 150px;
+      }
+
+      img:hover{
+        width: 300px;
+        border: 2px solid;
+      }
+
+      button:hover{
+        background-color: green;
+        border: none;
+        color: white;
+        
+      }
+
+
 
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
+    <button>Save</button>
 
     <!-- css types:  -->
-     <!-- 1.Inline(tag's)
+    <!-- 1.Inline(tag's)
      2.Internal(head tag)
      3.External(extra css file create and connect)  -->
 
-    <h1 style="color: green; ">Affordable vs Expensive IT Institutes in Nepal: How to Select the Best IT Institute in Nepal?</h1>
+    <!-- <h1 style="color: green">
+      Affordable vs Expensive IT Institutes in Nepal: How to Select the Best IT
+      Institute in Nepal?
+    </h1>
+
+    <h1 class="course">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+      consectetur consequatur exercitationem minus velit, eaque eum repudiandae
+      rem sequi dolorem ipsa libero, debitis nobis quos? Qui consectetur alias
+      fuga repudiandae.
+    </h1>
+
+    <h1 id="description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis tenetur
+      quasi veniam porro dolor totam vel optio voluptate deleniti praesentium
+      dignissimos molestiae, molestias omnis a officiis sequi fuga laboriosam
+      hic!
+    </h1>
+
+    <p id="description">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
+      corrupti illum repellat voluptates nemo id, nobis reiciendis at dolorem
+      alias. Ullam quaerat cupiditate, inventore nostrum veritatis alias! Quas,
+      necessitatibus debitis!
+    </p>
+
+    <ul>
+      <li class="course">Python</li>
+      <li class="course">Django</li>
+      <li class="course">MERN</li>
+    </ul>
+
+    <span>this is span tag</span>
+
+    <table>
+      <thead>
+        <tr>
+          <th>heading</th>
+        </tr>
+      </thead>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th id="heading">heading 2</th>
+        </tr>
+      </thead>
+    </table> -->
+
+<img src="https://www.mindrisers.com.np/_next/static/media/bannerModel.b6917771.svg" alt="image1">
 
 
-    
-</body>
+<img src="https://www.mindrisers.com.np/_next/static/media/guarantee.eae9f243.svg" alt="image2">
+
+
+  </body>
 </html>
