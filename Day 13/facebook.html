@@ -13,20 +13,41 @@
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
       }
-      .nav {
+      header{
         height: 70px;
+
+      }
+      .nav {
+        display: flex;
       }
 
-      .lef {
+      .conatainer{
+        display: flex;
+      }
+      ul{
+        display: flex;
+        justify-content: space-around;
+      }
+      .left {
         width: 20%;
         height: calc(100vh - 70px);
         position: sticky;
         top: 0;
+        background-color: green;
       }
       .feed {
         width: 60%;
+        display: flex;
+        justify-content: center;
+        padding: 100px;
       }
+      .post{
+        /* width: 800px; */
+        background-color: grey;
+      }
+
       .right {
+        background-color: yellow;
         width: 20%;
         height: calc(100vh - 70px);
         top: 0;
@@ -51,7 +72,19 @@
       <div class="conatainer">
         <div class="left"></div>
 
-        <div class="feed"></div>
+        <div class="feed">
+
+          <div class="post">
+            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae consequuntur quis ratione inventore eum, blanditiis magnam a, fugiat at neque sequi veniam architecto soluta. Incidunt ab qui porro quas possimus.</h1>
+            <img src="" alt="">
+            <ul>
+              <li>like</li>
+              <li>comment</li>
+              <li>share</li>
+            </ul>
+          </div>
+
+        </div>
 
         <div class="right"></div>
       </div>
