@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: green;
+        }
+
+
+        /* sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... } */
+
+        /* @media (max-width:768px) {
+            .container{
+                background-color: blue;
+            }
+        } */
+
+        /* @media (min-width:768px) {
+            .container{
+                background-color: blue;
+                font-size: 2rem;
+            }
+        } */
+
+
+        /* landscap => laptop => width > height
+        portrait => phone => height > width */
+
+
+        /* @media (orientation: landscape) {
+            .container{
+                background-color: aqua;
+            }
+        } */
+        @media (orientation: portrait) {
+            .container{
+                background-color: aqua;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nostrum maxime aliquid et iure
+            voluptatibus sit! Expedita laborum ipsum cum nemo quam ad tenetur minus aperiam, dolore magnam adipisci.
+            Voluptas.</h1>
+    </div>
+</body>
+
+</html>
